@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GoodLuckModelsStoreContainer" CdmEntityContainer="GoodLuckEntities">
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="GoodLuck.Models.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="GoodLuck.Models.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+          <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="GSTNO" ColumnName="GSTNO" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Challans">
+      <EntityTypeMapping TypeName="GoodLuck.Models.Challan">
+        <MappingFragment StoreEntitySet="Challans">
+          <ScalarProperty Name="Scrap_Date" ColumnName="Scrap_Date" />
+          <ScalarProperty Name="Scrap_Length" ColumnName="Scrap_Length" />
+          <ScalarProperty Name="Balance_Length" ColumnName="Balance_Length" />
+          <ScalarProperty Name="Reducer_Length" ColumnName="Reducer_Length" />
+          <ScalarProperty Name="Reducer_Nos" ColumnName="Reducer_Nos" />
+          <ScalarProperty Name="Long_Length" ColumnName="Long_Length" />
+          <ScalarProperty Name="Long_Nos" ColumnName="Long_Nos" />
+          <ScalarProperty Name="C45D_Length" ColumnName="45D_Length" />
+          <ScalarProperty Name="C45D_Nos" ColumnName="45D_Nos" />
+          <ScalarProperty Name="C1D_Length" ColumnName="1D_Length" />
+          <ScalarProperty Name="C1D_Nos" ColumnName="1D_Nos" />
+          <ScalarProperty Name="C90D_Length" ColumnName="90D_Length" />
+          <ScalarProperty Name="C90D_Nos" ColumnName="90D_Nos" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+          <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

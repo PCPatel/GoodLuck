@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GoodLuck.Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Challans">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="ChallanNo" Type="varchar" MaxLength="20" />
+          <Property Name="ChallanDate" Type="date" />
+          <Property Name="Size" Type="varchar" MaxLength="10" />
+          <Property Name="Schedule" Type="varchar" MaxLength="10" />
+          <Property Name="Length" Type="int" />
+          <Property Name="90D_Nos" Type="int" />
+          <Property Name="90D_Length" Type="int" />
+          <Property Name="1D_Nos" Type="int" />
+          <Property Name="1D_Length" Type="int" />
+          <Property Name="45D_Nos" Type="int" />
+          <Property Name="45D_Length" Type="int" />
+          <Property Name="Long_Nos" Type="int" />
+          <Property Name="Long_Length" Type="int" />
+          <Property Name="Reducer_Nos" Type="int" />
+          <Property Name="Reducer_Length" Type="int" />
+          <Property Name="Balance_Length" Type="int" />
+          <Property Name="Scrap_Length" Type="int" />
+          <Property Name="Scrap_Date" Type="date" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Address1" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Address2" Type="varchar" MaxLength="250" />
+          <Property Name="Pincode" Type="int" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="15" />
+          <Property Name="Mobile" Type="varchar" MaxLength="10" />
+          <Property Name="GSTNO" Type="varchar" MaxLength="20" />
+          <Property Name="ContactPerson" Type="varchar" MaxLength="50" />
+          <Property Name="AddedBy" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="AddedOn" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="20" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="Mobile" Type="varchar" MaxLength="10" />
+          <Property Name="IsAdmin" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GoodLuckModelsStoreContainer">
+          <EntitySet Name="Challans" EntityType="Self.Challans" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GoodLuck.Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="GoodLuckEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="Customers" EntityType="GoodLuck.Models.Customer" />
+          <EntitySet Name="Challans" EntityType="GoodLuck.Models.Challan" />
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Pincode" Type="Int32" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="GSTNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AddedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AddedOn" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Challan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="ChallanNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ChallanDate" Type="DateTime" Precision="0" />
+          <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Schedule" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Length" Type="Int32" />
+          <Property Name="C90D_Nos" Type="Int32" />
+          <Property Name="C90D_Length" Type="Int32" />
+          <Property Name="C1D_Nos" Type="Int32" />
+          <Property Name="C1D_Length" Type="Int32" />
+          <Property Name="C45D_Nos" Type="Int32" />
+          <Property Name="C45D_Length" Type="Int32" />
+          <Property Name="Long_Nos" Type="Int32" />
+          <Property Name="Long_Length" Type="Int32" />
+          <Property Name="Reducer_Nos" Type="Int32" />
+          <Property Name="Reducer_Length" Type="Int32" />
+          <Property Name="Balance_Length" Type="Int32" />
+          <Property Name="Scrap_Length" Type="Int32" />
+          <Property Name="Scrap_Date" Type="DateTime" Precision="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GoodLuckModelsStoreContainer" CdmEntityContainer="GoodLuckEntities">
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="GoodLuck.Models.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="GoodLuck.Models.Customer">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+                <ScalarProperty Name="GSTNO" ColumnName="GSTNO" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Challans">
+            <EntityTypeMapping TypeName="GoodLuck.Models.Challan">
+              <MappingFragment StoreEntitySet="Challans">
+                <ScalarProperty Name="Scrap_Date" ColumnName="Scrap_Date" />
+                <ScalarProperty Name="Scrap_Length" ColumnName="Scrap_Length" />
+                <ScalarProperty Name="Balance_Length" ColumnName="Balance_Length" />
+                <ScalarProperty Name="Reducer_Length" ColumnName="Reducer_Length" />
+                <ScalarProperty Name="Reducer_Nos" ColumnName="Reducer_Nos" />
+                <ScalarProperty Name="Long_Length" ColumnName="Long_Length" />
+                <ScalarProperty Name="Long_Nos" ColumnName="Long_Nos" />
+                <ScalarProperty Name="C45D_Length" ColumnName="45D_Length" />
+                <ScalarProperty Name="C45D_Nos" ColumnName="45D_Nos" />
+                <ScalarProperty Name="C1D_Length" ColumnName="1D_Length" />
+                <ScalarProperty Name="C1D_Nos" ColumnName="1D_Nos" />
+                <ScalarProperty Name="C90D_Length" ColumnName="90D_Length" />
+                <ScalarProperty Name="C90D_Nos" ColumnName="90D_Nos" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Schedule" ColumnName="Schedule" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="ChallanDate" ColumnName="ChallanDate" />
+                <ScalarProperty Name="ChallanNo" ColumnName="ChallanNo" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,311 @@
+E:\Projects\GoodLuckWeb\GoodLuck\bin\ApplicationInsights.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\GoodLuck.pdb
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Http.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\WebGrease.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.pdb
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Http.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.xml
+E:\Projects\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csprojResolveAssemblyReference.cache
+E:\Projects\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csproj.CoreCompileInputs.cache
+E:\Projects\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.dll
+E:\Projects\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.pdb
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csc.rsp
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\csi.rsp
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.AppContext.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Console.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.Process.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Compression.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Pipes.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.AccessControl.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Claims.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Threading.Thread.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.ValueTuple.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.rsp
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe
+E:\Projects\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\EntityFramework.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.dll
+E:\Projects\GoodLuckWeb\GoodLuck\bin\EntityFramework.xml
+E:\Projects\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\ApplicationInsights.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\GoodLuck.pdb
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csc.rsp
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\csi.rsp
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.AppContext.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Collections.Immutable.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Console.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.Process.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Compression.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Pipes.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Reflection.Metadata.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.AccessControl.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Claims.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Threading.Thread.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.ValueTuple.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.rsp
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe.config
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\EntityFramework.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.Web.Infrastructure.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Http.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\WebGrease.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.pdb
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\EntityFramework.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Http.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.xml
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csprojResolveAssemblyReference.cache
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.dll
+D:\Phoolchand D drive\PC Patel New\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.pdb
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\ApplicationInsights.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\GoodLuck.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\GoodLuck.pdb
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csc.exe.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csc.rsp
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csi.exe.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\csi.rsp
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.AppContext.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Console.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.Process.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Compression.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.IO.Pipes.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.AccessControl.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Claims.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Threading.Thread.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.ValueTuple.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.exe.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\vbc.rsp
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\EntityFramework.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Http.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\WebGrease.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Antlr3.Runtime.pdb
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\EntityFramework.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\EntityFramework.SqlServer.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.DependencyCollector.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.Web.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AI.WindowsServer.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.ApplicationInsights.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\Newtonsoft.Json.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Diagnostics.DiagnosticSource.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Helpers.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Mvc.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Optimization.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Razor.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.WebPages.Razor.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Net.Http.Formatting.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Http.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.Web.Http.WebHost.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csprojResolveAssemblyReference.cache
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csproj.CoreCompileInputs.cache
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.pdb

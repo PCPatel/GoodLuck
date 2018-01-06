@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GoodLuck.Models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsAdmin" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GoodLuckEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Customers" EntityType="GoodLuck.Models.Customer" />
+    <EntitySet Name="Challans" EntityType="GoodLuck.Models.Challan" />
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Pincode" Type="Int32" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="GSTNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AddedBy" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AddedOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Challan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="ChallanNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ChallanDate" Type="DateTime" Precision="0" />
+    <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Schedule" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Length" Type="Int32" />
+    <Property Name="C90D_Nos" Type="Int32" />
+    <Property Name="C90D_Length" Type="Int32" />
+    <Property Name="C1D_Nos" Type="Int32" />
+    <Property Name="C1D_Length" Type="Int32" />
+    <Property Name="C45D_Nos" Type="Int32" />
+    <Property Name="C45D_Length" Type="Int32" />
+    <Property Name="Long_Nos" Type="Int32" />
+    <Property Name="Long_Length" Type="Int32" />
+    <Property Name="Reducer_Nos" Type="Int32" />
+    <Property Name="Reducer_Length" Type="Int32" />
+    <Property Name="Balance_Length" Type="Int32" />
+    <Property Name="Scrap_Length" Type="Int32" />
+    <Property Name="Scrap_Date" Type="DateTime" Precision="0" />
+  </EntityType>
+</Schema>

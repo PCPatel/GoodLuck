@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - GoodLuck</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/cssjqryUi")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("GoodLuck", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
+                    <li>@Html.ActionLink("Challans", "Index", "Challans")</li>
+                    <li>@Html.ActionLink("Reports", "Index", "Report")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    @*<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>*@
+
+                    @{
+                        if (Request.IsAuthenticated)
+                        {
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome, @User.Identity.Name</a></li>
+                            <li><a href="/Account/ChangePassword"><span class="glyphicon glyphicon-lock"></span> Change Password</a></li>
+                            <li>
+                                <a href="javascript:document.getElementById('logoutForm').submit();">
+                                    <span class="glyphicon glyphicon-log-out"></span> Logout
+                                    @using (Html.BeginForm("Logout", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                    {
+
+                                    }
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li><a href="/Account/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        }
+                    }
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p style="width:100%;text-align:center;">&copy; @DateTime.Now.Year - Design and developed by Phoolchand Patel</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryui")
+
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('input[type=datetime]').datepicker({
+            //    dateFormat: "dd-M-yy",
+            //    changeMonth: true,
+            //    changeYear: true
+            //});
+            $('input[type^=date]').datepicker({
+                dateFormat: "dd-M-yy",
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+</body>
+</html>

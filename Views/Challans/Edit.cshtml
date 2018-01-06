@@ -1,0 +1,200 @@
+﻿@model GoodLuck.Models.Challan
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Edit Challan</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.CustomerId, htmlAttributes: new { @class = "control-label col-xs-2" })*@
+            <label class="control-label col-xs-2" for="CustomerId">Customer</label>
+            <div class="col-xs-4">
+                @*@Html.EditorFor(model => model.CustomerId, new { htmlAttributes = new { @class = "form-control input-sm" } })*@
+                @Html.DropDownListFor(x => x.CustomerId, (SelectList)ViewData["CustomerList"], "--Select Customer--", new { @class = "form-control input-sm", onChange = "changeCustomer(this.value);" })
+                @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ChallanNo, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.ChallanNo, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.ChallanNo, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.ChallanDate, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.ChallanDate, new
+                {
+                    htmlAttributes = new
+                    {
+                        @class = "form-control input-sm",
+                        type = "datetime",
+                        @Value = Model.ChallanDate.HasValue ? Model.ChallanDate.Value.ToString("dd-MMM-yyyy") : ""
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.ChallanDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Size, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Size, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Size, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.Schedule, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Schedule, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Schedule, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.C90D_Nos, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C90D_Nos, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C90D_Nos, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.C90D_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C90D_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C90D_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.C1D_Nos, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C1D_Nos, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C1D_Nos, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.C1D_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C1D_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C1D_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.C45D_Nos, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C45D_Nos, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C45D_Nos, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.C45D_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.C45D_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.C45D_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Long_Nos, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Long_Nos, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Long_Nos, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.Long_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Long_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Long_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Reducer_Nos, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Reducer_Nos, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Reducer_Nos, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.Reducer_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Reducer_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Reducer_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Balance_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Balance_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Balance_Length, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Scrap_Length, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Scrap_Length, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                @Html.ValidationMessageFor(model => model.Scrap_Length, "", new { @class = "text-danger" })
+            </div>
+            @*</div>
+
+                <div class="form-group">*@
+            @Html.LabelFor(model => model.Scrap_Date, htmlAttributes: new { @class = "control-label col-xs-2" })
+            <div class="col-xs-4">
+                @Html.EditorFor(model => model.Scrap_Date, new
+                {
+                    htmlAttributes = new
+                    {
+                        @class = "form-control input-sm",
+                        type = "datetime",
+                        @Value = Model.Scrap_Date.HasValue ? Model.Scrap_Date.Value.ToString("dd-MMM-yyyy") : ""
+                    }
+                })
+                @Html.ValidationMessageFor(model => model.Scrap_Date, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-4">
+                <input type="submit" value="Update" class="btn btn-primary" />
+                @*@Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-warning" })*@
+                <a class="btn btn-warning" id="btnCancel" href="/Challans/Index/@Model.CustomerId">Cancel</a>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    function changeCustomer(id) {
+        $("#btnCancel").attr("href", "/Challans/Index/" + id);
+    };
+</script>

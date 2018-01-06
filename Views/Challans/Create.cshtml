@@ -1,0 +1,242 @@
+﻿@model GoodLuck.Models.ChallanViewModel
+@{
+    ViewBag.Title = "Create";
+}
+<style>
+    th {
+        text-align: center;
+    }
+
+    .form-control {
+        /* padding: 6px 12px;*/
+        padding-top: 4px;
+        padding-right: 2px;
+        padding-bottom: 4px;
+        padding-left: 2px;
+    }
+</style>
+<h4>Add Challan</h4>
+<hr />
+@using (Html.BeginForm("Create", "Challans", FormMethod.Post, new { id = "form1" }))
+{
+    @Html.ValidationSummary(true)
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-xs-12">
+            <label class="control-label" for="Customer">Customer :&nbsp;</label>
+            @*@Html.DropDownList("Customer", Model.Customers, "--Select Customer--", new { @class = "form-control", style = "display:inline;", onChange = "changeCustomer();" })*@
+            @Html.DropDownListFor(x => x.Customer, Model.Customers, "--Select Customer--", new { @class = "form-control", style = "display:inline;", onChange = "changeCustomer();" })
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-condensed table-bordered">
+                <tr>
+                    <th rowspan="2">Sr<br />No</th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].ChallanNo)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].ChallanDate)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Size)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Schedule)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Length)
+                    </th>
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C90D_Length)
+                        </th>*@
+                    <th colspan="2">90D</th>
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C1D_Length)
+                        </th>*@
+                    <th colspan="2">1D</th>
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Challans[0].C45D_Length)
+                        </th>*@
+                    <th colspan="2">45D</th>
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.Challans[0].Long_Nos)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Challans[0].Long_Length)
+                        </th>*@
+                    <th colspan="2">Long</th>
+                    @*<th>
+                            @Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)
+                        </th>*@
+                    <th colspan="2">Reducer</th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Balance_Length)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Scrap_Length)
+                    </th>
+                    <th rowspan="2">
+                        @Html.DisplayNameFor(model => model.Challans[0].Scrap_Date)
+                    </th>
+                    <th rowspan="2"></th>
+                </tr>
+                <tr>
+                    <th>
+                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)*@
+                    </th>
+                    <th>
+                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Length)*@
+                    </th>
+                    <th>
+                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)*@
+                    </th>
+                    <th>
+                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Length)*@
+                    </th>
+                    <th>
+                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)*@
+                    </th>
+                    <th>
+                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Length)*@
+                    </th>
+                    <th>
+                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].Long_Nos)*@
+                    </th>
+                    <th>
+                        Len@*@Html.DisplayNameFor(model => model.Challans[0].Long_Length)*@
+                    </th>
+                    <th>
+                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)*@
+                    </th>
+                    <th>
+                        Len@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)*@
+                    </th>
+
+                </tr>
+                @{int i = 0;}
+                @foreach (var Challans in Model.Challans)
+                {
+                    <tr>
+                        <td>@(i + 1)<input name="Challans[@i].Id" type="hidden" value="@i" /></td>
+                        <td>@Html.EditorFor(modelItem => Challans.ChallanNo, null, "Challans[" + i + "].ChallanNo", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.ChallanDate, null, "Challans[" + i + "].ChallanDate", new { htmlAttributes = new { @class = "form-control input-sm", style = "width:90px;", type = "datetime", @Value = Challans.ChallanDate.HasValue ? Challans.ChallanDate.Value.ToString("dd-MMM-yyyy") : "" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Size, null, "Challans[" + i + "].Size", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Schedule, null, "Challans[" + i + "].Schedule", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Length, null, "Challans[" + i + "].Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C90D_Nos, null, "Challans[" + i + "].C90D_Nos", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C90D_Length, null, "Challans[" + i + "].C90D_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C1D_Nos, null, "Challans[" + i + "].C1D_Nos", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C1D_Length, null, "Challans[" + i + "].C1D_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C45D_Nos, null, "Challans[" + i + "].C45D_Nos", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.C45D_Length, null, "Challans[" + i + "].C45D_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Long_Nos, null, "Challans[" + i + "].Long_Nos", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Long_Length, null, "Challans[" + i + "].Long_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Reducer_Nos, null, "Challans[" + i + "].Reducer_Nos", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Reducer_Length, null, "Challans[" + i + "].Reducer_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Balance_Length, null, "Challans[" + i + "]Balance_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Scrap_Length, null, "Challans[" + i + "].Scrap_Length", new { htmlAttributes = new { @class = "form-control input-sm" } })</td>
+                        <td>@Html.EditorFor(modelItem => Challans.Scrap_Date, null, "Challans[" + i + "].Scrap_Date", new { htmlAttributes = new { @class = "form-control input-sm", style = "width:90px;", type = "datetime", @Value = Challans.Scrap_Date.HasValue ? Challans.Scrap_Date.Value.ToString("dd-MMM-yyyy") : "" } })</td>
+                        <td style="width:80px;">
+                            <div class="btn-group">
+                                @if (Model.Challans.Count > 1)
+                                {
+                                    <button type="button" id="btnRemove" class="btn btn-danger btn-sm" onclick="remove(@i);">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                    </button>
+                                }
+                                @if (i == Model.Challans.Count - 1)
+                                {
+
+                                    @*<input type="button" id="btnAddMore" value="+ Add" class="btn btn-success" onclick="addMore();" />*@
+
+                                    <button type="submit" id="btnAddMore" class="btn btn-success btn-sm" onclick="addMore();">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </button>
+
+                                }
+                            </div>
+                        </td>
+
+
+                    </tr>
+                    i++;
+                }
+                @*@for (int i = 0; i < Model.Challans.Count; i++)
+                    {
+                        <tr>
+                            <td>@Html.TextBox("Challans[" + @i + "].ChallanNo", Model.Challans[i].ChallanNo)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].ChallanDate", Model.Challans[i].ChallanDate)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Size", Model.Challans[i].Size)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Schedule", Model.Challans[i].Schedule)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Length", Model.Challans[i].Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C90D_Nos", Model.Challans[i].C90D_Nos)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C90D_Length", Model.Challans[i].C90D_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C1D_Nos", Model.Challans[i].C1D_Nos)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C1D_Length", Model.Challans[i].C1D_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C45D_Nos", Model.Challans[i].C45D_Nos)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].C45D_Length", Model.Challans[i].C45D_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Long_Nos", Model.Challans[i].Long_Nos)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Long_Length", Model.Challans[i].Long_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Reducer_Nos", Model.Challans[i].Reducer_Nos)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Reducer_Length", Model.Challans[i].Reducer_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Balance_Length", Model.Challans[i].Balance_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Scrap_Length", Model.Challans[i].Scrap_Length)</td>
+                            <td>@Html.TextBox("Challans[" + @i + "].Scrap_Date", Model.Challans[i].Scrap_Date)</td>
+                        </tr>
+                    }*@
+            </table>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-12" style="text-align:center;">
+            <input type="submit" value="Add Challan" class="btn btn-primary" />
+            @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-warning" })
+        </div>
+    </div>
+                    }
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+    function addMore() {
+        var form = $('#form1');
+        $.validator.unobtrusive.parse(form);
+        form.validate();
+
+        if (form.valid()) {
+
+            form = document.getElementById('form1');
+            //form.target = '_blank';
+            form.action = '/Challans/AddMore';
+            form.submit();
+        }
+    }
+    function remove(id) {
+        //var form = $('#form1');
+        //$.validator.unobtrusive.parse(form);
+        //form.validate();
+
+        //if (form.valid()) {
+        form = document.getElementById('form1');
+        //form.target = '_blank';
+        form.action = '/Challans/Remove/' + id;
+        form.submit();
+        //}
+    }
+</script>

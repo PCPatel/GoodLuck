@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GoodLuck.Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Challans">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="ChallanNo" Type="varchar" MaxLength="20" />
+    <Property Name="ChallanDate" Type="date" />
+    <Property Name="Size" Type="varchar" MaxLength="10" />
+    <Property Name="Schedule" Type="varchar" MaxLength="10" />
+    <Property Name="Length" Type="int" />
+    <Property Name="90D_Nos" Type="int" />
+    <Property Name="90D_Length" Type="int" />
+    <Property Name="1D_Nos" Type="int" />
+    <Property Name="1D_Length" Type="int" />
+    <Property Name="45D_Nos" Type="int" />
+    <Property Name="45D_Length" Type="int" />
+    <Property Name="Long_Nos" Type="int" />
+    <Property Name="Long_Length" Type="int" />
+    <Property Name="Reducer_Nos" Type="int" />
+    <Property Name="Reducer_Length" Type="int" />
+    <Property Name="Balance_Length" Type="int" />
+    <Property Name="Scrap_Length" Type="int" />
+    <Property Name="Scrap_Date" Type="date" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Address1" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Address2" Type="varchar" MaxLength="250" />
+    <Property Name="Pincode" Type="int" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="15" />
+    <Property Name="Mobile" Type="varchar" MaxLength="10" />
+    <Property Name="GSTNO" Type="varchar" MaxLength="20" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="50" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AddedOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Mobile" Type="varchar" MaxLength="10" />
+    <Property Name="IsAdmin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GoodLuckModelsStoreContainer">
+    <EntitySet Name="Challans" EntityType="Self.Challans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

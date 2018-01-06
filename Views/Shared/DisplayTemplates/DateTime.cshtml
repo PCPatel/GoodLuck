@@ -1,0 +1,9 @@
+﻿@model DateTime?
+@*@Model.Value.ToString("dd-MMM-yyyy hh:mm tt")*@
+@if (Model.HasValue)
+{
+    @Model.Value.ToString("dd-MMM-yyyy hh:mm tt")
+}
+
+@*@Model.HasValue ? Model.Value.ToString("yyyy-MM-dd hh:mm tt") : ""*@
+@*@Model.ToString()*@
