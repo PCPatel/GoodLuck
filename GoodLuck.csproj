@@ -201,6 +201,7 @@
       <DependentUpon>GoodLuckModels.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModel\ChallanViewModel.cs" />
+    <Compile Include="Models\ViewModel\ReportViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
