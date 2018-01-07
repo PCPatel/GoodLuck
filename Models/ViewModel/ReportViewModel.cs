@@ -11,8 +11,8 @@ namespace GoodLuck.Models
         public string ChallanNo { get; set; }
         public string Size { get; set; }
         public string Schedule { get; set; }
-        public DateTime ChallanFromDate { get; set; }
-        public DateTime ChallanToDate { get; set; }
+        public Nullable<DateTime> ChallanFromDate { get; set; }
+        public Nullable<DateTime> ChallanToDate { get; set; }
         public List<Challan> Challans { get; set; }
     }
 }
