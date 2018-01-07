@@ -309,3 +309,11 @@ E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csprojResolv
 E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.csproj.CoreCompileInputs.cache
 E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.dll
 E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\obj\Debug\GoodLuck.pdb
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\ClosedXML.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\DocumentFormat.OpenXml.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\FastMember.Signed.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.IO.FileSystem.Primitives.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\System.IO.Packaging.dll
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\ClosedXML.pdb
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\ClosedXML.xml
+E:\Projects\GoodLuck Latest\GoodLuckWeb\GoodLuck\bin\DocumentFormat.OpenXml.xml

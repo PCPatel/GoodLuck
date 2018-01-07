@@ -10,174 +10,182 @@
     </div>
 }
 <h4>Report</h4>
-@using (Html.BeginForm("Index", "Report", FormMethod.Post, new { id = "form1" }))
-{
-    <div class="row">
-        <div class="col-xs-1 text-right">
-            <label>Customer</label>
-        </div>
-        <div class="col-xs-4">
-            @Html.DropDownListFor(x => x.Customer, Model.Customers, "--Select Customer--", new { @class = "form-control", style = "display:inline;" })
-        </div>
-        <div class="col-xs-2 text-right">
-            <label>Size</label>
-        </div>
-        <div class="col-xs-2">
-            @Html.EditorFor(x => x.Size, new { htmlAttributes = new { @class = "form-control" } })
-        </div>
-        <div class="col-xs-1 text-right">
-            <label>Schedule</label>
-        </div>
-        <div class="col-xs-2">
-            @Html.EditorFor(x => x.Schedule, new { htmlAttributes = new { @class = "form-control" } })
-        </div>
-    </div>
-    <div class="row" style="padding-top:10px;">
-        <div class="col-xs-1 text-right">
-            <label style="white-space:nowrap;">Challan No</label>
-        </div>
-        <div class="col-xs-4">
-            @Html.EditorFor(x => x.ChallanNo, new { htmlAttributes = new { @class = "form-control" } })
-        </div>
-        <div class="col-xs-2 text-right">
-            <label>Challan Date From</label>
-        </div>
-        <div class="col-xs-2">
-            @Html.EditorFor(x => x.ChallanFromDate, new { htmlAttributes = new { @class = "form-control", type = "datetime", @Value = Model.ChallanFromDate.HasValue ? Model.ChallanFromDate.Value.ToString("dd-MMM-yyyy") : "" } })
-        </div>
-        <div class="col-xs-1 text-right">
-            <label>To</label>
-        </div>
-        <div class="col-xs-2">
-            @Html.EditorFor(x => x.ChallanToDate, new { htmlAttributes = new { @class = "form-control", type = "datetime", @Value = Model.ChallanToDate.HasValue ? Model.ChallanToDate.Value.ToString("dd-MMM-yyyy") : "" } })
-        </div>
-    </div>
-    <div class="row" style="padding-top:10px;">
-        <div class="col-xs-12 text-center">
-            <input type="submit" class="btn btn-primary" value="View Data" />
-        </div>
-    </div>
-}
-    <div class="row" style="padding-top:10px;">
-        <div class="col-xs-12">
-            <table class="table table-condensed table-bordered">
-                <tr>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].ChallanNo)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].ChallanDate)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Size)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Schedule)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Length)
-                    </th>
-                    @*<th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C90D_Length)
-                        </th>*@
-                    <th colspan="2">90D</th>
-                    @*<th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C1D_Length)
-                        </th>*@
-                    <th colspan="2">1D</th>
-                    @*<th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Challans[0].C45D_Length)
-                        </th>*@
-                    <th colspan="2">45D</th>
-                    @*<th>
-                            @Html.DisplayNameFor(model => model.Challans[0].Long_Nos)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Challans[0].Long_Length)
-                        </th>*@
-                    <th colspan="2">Long</th>
-                    @*<th>
-                            @Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)
-                        </th>*@
-                    <th colspan="2">Reducer</th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Balance_Length)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Scrap_Length)
-                    </th>
-                    <th rowspan="2">
-                        @Html.DisplayNameFor(model => model.Challans[0].Scrap_Date)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)*@
-                    </th>
-                    <th>
-                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Length)*@
-                    </th>
-                    <th>
-                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)*@
-                    </th>
-                    <th>
-                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Length)*@
-                    </th>
-                    <th>
-                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)*@
-                    </th>
-                    <th>
-                        Len@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Length)*@
-                    </th>
-                    <th>
-                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].Long_Nos)*@
-                    </th>
-                    <th>
-                        Len@*@Html.DisplayNameFor(model => model.Challans[0].Long_Length)*@
-                    </th>
-                    <th>
-                        Nos@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)*@
-                    </th>
-                    <th>
-                        Len@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)*@
-                    </th>
 
-                </tr>
-                @foreach (var item in Model.Challans)
-                {
-                    <tr>
-                        <td>@Html.DisplayFor(modelItem => item.ChallanNo)</td>
-                        <td>@Html.DisplayFor(modelItem => item.ChallanDate)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Size)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Schedule)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C90D_Nos)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C90D_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C1D_Nos)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C1D_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C45D_Nos)</td>
-                        <td>@Html.DisplayFor(modelItem => item.C45D_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Long_Nos)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Long_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Reducer_Nos)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Reducer_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Balance_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Scrap_Length)</td>
-                        <td>@Html.DisplayFor(modelItem => item.Scrap_Date)</td>
-                    </tr>
-                }
-            </table>
-        </div>
+<div class="row">
+    <div class="col-xs-1 text-right">
+        <label>Customer</label>
     </div>
+    <div class="col-xs-4">
+        @Html.DropDownListFor(x => x.Customer, Model.Customers, "--Select Customer--", new { @class = "form-control", style = "display:inline;" })
+    </div>
+    <div class="col-xs-2 text-right">
+        <label>Size</label>
+    </div>
+    <div class="col-xs-2">
+        @Html.EditorFor(x => x.Size, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="col-xs-1 text-right">
+        <label>Schedule</label>
+    </div>
+    <div class="col-xs-2">
+        @Html.EditorFor(x => x.Schedule, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+</div>
+<div class="row" style="padding-top:10px;">
+    <div class="col-xs-1 text-right">
+        <label style="white-space:nowrap;">Challan No</label>
+    </div>
+    <div class="col-xs-4">
+        @Html.EditorFor(x => x.ChallanNo, new { htmlAttributes = new { @class = "form-control" } })
+    </div>
+    <div class="col-xs-2 text-right">
+        <label>Challan Date From</label>
+    </div>
+    <div class="col-xs-2">
+        @Html.EditorFor(x => x.ChallanFromDate, new { htmlAttributes = new { @class = "form-control", type = "datetime", @Value = Model.ChallanFromDate.HasValue ? Model.ChallanFromDate.Value.ToString("dd-MMM-yyyy") : "" } })
+    </div>
+    <div class="col-xs-1 text-right">
+        <label>To</label>
+    </div>
+    <div class="col-xs-2">
+        @Html.EditorFor(x => x.ChallanToDate, new { htmlAttributes = new { @class = "form-control", type = "datetime", @Value = Model.ChallanToDate.HasValue ? Model.ChallanToDate.Value.ToString("dd-MMM-yyyy") : "" } })
+    </div>
+</div>
+<div class="row" style="padding-top:10px;">
+    <div class="col-xs-12 text-center">
+        @using (Html.BeginForm("Index", "Report", FormMethod.Post, new { id = "form1", style = "display:inline;" }))
+        {
+            <input type="submit" class="btn btn-primary" value="View Data" />
+        }
+        @if (Model.Challans.Count > 0)
+        {
+            using (Html.BeginForm("Export", "Report", FormMethod.Post, new { id = "form2", style = "display:inline;" }))
+            {
+                <input type="submit" class="btn btn-success" value="Export to Excel" />
+            }
+        }
+    </div>
+</div>
+<div class="row" style="padding-top:10px;">
+    <div class="col-xs-12">
+        <table class="table table-condensed table-bordered">
+            <tr>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].ChallanNo)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].ChallanDate)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Size)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Schedule)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Length)
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C90D_Length)
+                    </th>*@
+                <th colspan="2">90D</th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C1D_Length)
+                    </th>*@
+                <th colspan="2">1D</th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Challans[0].C45D_Length)
+                    </th>*@
+                <th colspan="2">45D</th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Challans[0].Long_Nos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Challans[0].Long_Length)
+                    </th>*@
+                <th colspan="2">Long</th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)
+                    </th>*@
+                <th colspan="2">Reducer</th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Balance_Length)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Scrap_Length)
+                </th>
+                <th rowspan="2">
+                    @Html.DisplayNameFor(model => model.Challans[0].Scrap_Date)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Nos@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Nos)*@
+                </th>
+                <th>
+                    Len@*@Html.DisplayNameFor(model => model.Challans[0].C90D_Length)*@
+                </th>
+                <th>
+                    Nos@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Nos)*@
+                </th>
+                <th>
+                    Len@*@Html.DisplayNameFor(model => model.Challans[0].C1D_Length)*@
+                </th>
+                <th>
+                    Nos@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Nos)*@
+                </th>
+                <th>
+                    Len@*@Html.DisplayNameFor(model => model.Challans[0].C45D_Length)*@
+                </th>
+                <th>
+                    Nos@*@Html.DisplayNameFor(model => model.Challans[0].Long_Nos)*@
+                </th>
+                <th>
+                    Len@*@Html.DisplayNameFor(model => model.Challans[0].Long_Length)*@
+                </th>
+                <th>
+                    Nos@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Nos)*@
+                </th>
+                <th>
+                    Len@*@Html.DisplayNameFor(model => model.Challans[0].Reducer_Length)*@
+                </th>
+
+            </tr>
+            @foreach (var item in Model.Challans)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.ChallanNo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ChallanDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Size)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Schedule)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C90D_Nos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C90D_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C1D_Nos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C1D_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C45D_Nos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.C45D_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Long_Nos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Long_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Reducer_Nos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Reducer_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Balance_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Scrap_Length)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Scrap_Date)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
